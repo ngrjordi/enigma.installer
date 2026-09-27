@@ -144,7 +144,8 @@ apt install neofetch -y
 apt install nano -y
 apt install vim -y
 apt install mc -y
-gem install lolcat
+gem install lolcat -y
+python -m pip install --upgrade pip
 figlet -f slant " D O N E "|lolcat
 fi
 
