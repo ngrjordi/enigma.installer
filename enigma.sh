@@ -133,6 +133,7 @@ pkg update && pkg upgrade -y
 pkg install termux-tools -y
 pkg install git -y
 pkg install python3 -y
+pkg install python-pip -y
 pkg install curl -y
 pkg install wget -y
 pkg install ruby -y
@@ -149,7 +150,6 @@ pip install mechanize -y
 pip install requests -y
 pip install colorama -y
 pip install scapy -y
-python -m pip install --upgrade pip
 figlet -f slant " D O N E "|lolcat
 fi
 
