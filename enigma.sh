@@ -7,7 +7,7 @@ me='\033[31;1m' #merah
 pu='\033[37;1m' #putih
 ku='\033[33;1m' #kuning
 echo
-python2 login.py
+python3 core.py
 echo
 clear
 echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
@@ -129,35 +129,27 @@ then
 clear
 figlet -f slant "S E C . . ."|lolcat
 sleep 2
-pkg update && pkg upgrade -Y
-pkg install git
-pkg install python
-pkg install python3
-pkg install curl
-pkg install wget
-pkg install ruby
-pkg install gem
-pkg install php
-pkg install cowsay
-pkg install toilet
-pkg install figlet
-pkg install neofetch
-pkg install nano
-pkg install vim
-gem install lolcat
-pip install mechanize
-pip install request
-pip install colorama
-pip install scapy
-pip install --upgrade pip
-pip2 install request
-pip2 install urllib3
-pip2 install chardet
-pip2 install certifi 
-pip2 install idna
-pip2 install requests
-pip2 install mechanize
-pip2 install colorama
+pkg update && pkg upgrade -y
+pkg install termux-tools -y
+pkg install git -y
+pkg install python3 -y
+pkg install curl -y
+pkg install wget -y
+pkg install ruby -y
+pkg install gem -y
+pkg install php -y
+pkg install cowsay -y
+pkg install toilet -y
+pkg install figlet -y
+pkg install neofetch -y
+pkg install nano -y
+pkg install vim -y
+gem install lolcat -y
+pip install mechanize -y
+pip install requests -y
+pip install colorama -y
+pip install scapy -y
+python -m pip install --upgrade pip
 figlet -f slant " D O N E "|lolcat
 fi
 
