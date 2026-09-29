@@ -144,7 +144,7 @@ menu() {
         exit 0
 
     else
-        echo -e $me"\n[!] Pilihan tidak valid, silakan coba lagi."
+        echo $me"\n[!] Pilihan tidak valid, silakan coba lagi."
         sleep 2
         menu
     fi
