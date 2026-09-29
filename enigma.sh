@@ -14,128 +14,141 @@ if [ -f "core.py" ]; then
     python3 core.py
 fi
 
-echo
-clear
-echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo $ku" |"$i"          ENIGMA"$i"    INSTALLER"$ku"            |"
-echo $ku" |"$me"─────────────────────────────────────────"$ku"|"
-echo $ku" |"$me" PENULIS"$cy"   ~>"$pu" NGURAH JORDI"$ku"               |"
-echo $ku" |"$me" INSTAGRAM"$cy" ~>"$pu" ngurahjordi"$ku"                |"
-echo $ku" |"$i"                                  ENJOY"$ku"  |"
-echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo
-echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo $ku" |"$cy" 1"$me"."$cy"LALIN"$me"         {"$cy"Root"$me"}"$ku"                  |"
-echo $ku" |"$cy" 2"$me"."$cy"LOCATOR"$ku"                               |"
-echo $ku" |"$cy" 3"$me"."$cy"DARK-FB"$me"       {"$cy"Premium"$me"}"$ku"               |"
-echo $ku" |"$cy" 4"$me"."$cy"BUG HUNTER"$ku"                            |"
-echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo $ku" |"$cy" 5"$me"."$cy"LITESCRIPT"$me"    {"$cy"Daface"$me"}"$ku"                |"
-echo $ku" |"$cy" 6"$me"."$cy"METASPLOIT"$ku"                            |"
-echo $ku" |"$cy" 7"$me"."$cy"FOLLOWER INSTAGRAM"$ku"                    |"
-echo $ku" |"$cy" 8"$me"."$cy"SAVE FOTO & VIDEO INSTAGRAM"$ku"           |"
-echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo
-echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo $ku" |"$cy" I"$me"."$me"NSTALL BAHAN"$me" {"$cy"Full"$me"}"$ku"                   |"
-echo $ku" |"$cy" E"$me"."$me"XIT"$ku"                                   |"
-echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo
-echo $me"┌==="$me"["$cy"Pilih"$me"]"
-echo $me"¦"
-read -p"└──> " pilih
-
-if [ "$pilih" = "1" ]; then
+# Membungkus antarmuka ke dalam fungsi 'menu'
+menu() {
     clear
-    figlet -f slant "S E C . . ."|lolcat
-    sleep 2
-    git clone https://github.com/Screetsec/LALIN.git
-    cd LALIN || exit
-    bash Lalin.sh
+    echo
+    echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
+    echo $ku" |"$i"          ENIGMA"$i"    INSTALLER"$ku"            |"
+    echo $ku" |"$me"─────────────────────────────────────────"$ku"|"
+    echo $ku" |"$me" PENULIS"$cy"   ~>"$pu" NGURAH JORDI"$ku"               |"
+    echo $ku" |"$me" INSTAGRAM"$cy" ~>"$pu" ngurahjordi"$ku"                |"
+    echo $ku" |"$i"                                  ENJOY"$ku"  |"
+    echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
+    echo
+    echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
+    echo $ku" |"$cy" 1"$me"."$cy"LALIN"$me"         {"$cy"Root"$me"}"$ku"                  |"
+    echo $ku" |"$cy" 2"$me"."$cy"LOCATOR"$ku"                               |"
+    echo $ku" |"$cy" 3"$me"."$cy"DARK-FB"$me"       {"$cy"Premium"$me"}"$ku"               |"
+    echo $ku" |"$cy" 4"$me"."$cy"BUG HUNTER"$ku"                            |"
+    echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
+    echo $ku" |"$cy" 5"$me"."$cy"LITESCRIPT"$me"    {"$cy"Daface"$me"}"$ku"                |"
+    echo $ku" |"$cy" 6"$me"."$cy"METASPLOIT"$ku"                            |"
+    echo $ku" |"$cy" 7"$me"."$cy"FOLLOWER INSTAGRAM"$ku"                    |"
+    echo $ku" |"$cy" 8"$me"."$cy"SAVE FOTO & VIDEO INSTAGRAM"$ku"           |"
+    echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
+    echo
+    echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
+    echo $ku" |"$cy" I"$me"."$me"NSTALL BAHAN"$me" {"$cy"Full"$me"}"$ku"                   |"
+    echo $ku" |"$cy" E"$me"."$me"XIT"$ku"                                   |"
+    echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
+    echo
+    echo $me"┌==="$me"["$cy"Pilih"$me"]"
+    echo $me"¦"
+    read -p "└──> " pilih
 
-elif [ "$pilih" = "2" ]; then
-    clear
-    figlet -f slant "S E C . . ."|lolcat
-    sleep 2
-    git clone https://github.com/thelinuxchoice/locator.git
-    cd locator || exit
-    chmod +x *
-    bash locator.sh
+    if [ "$pilih" = "1" ]; then
+        clear
+        figlet -f slant "S E C . . ."|lolcat
+        sleep 2
+        git clone https://github.com/Screetsec/LALIN.git
+        cd LALIN || exit
+        bash Lalin.sh
 
-elif [ "$pilih" = "3" ]; then
-    clear
-    figlet -f slant "S E C . . ."|lolcat
-    sleep 2
-    git clone https://github.com/TheMagizz/DarkPremium
-    cd DarkPremium || exit
-    chmod +x *
-    python2 DarkFB.py
+    elif [ "$pilih" = "2" ]; then
+        clear
+        figlet -f slant "S E C . . ."|lolcat
+        sleep 2
+        git clone https://github.com/thelinuxchoice/locator.git
+        cd locator || exit
+        chmod +x *
+        bash locator.sh
 
-elif [ "$pilih" = "4" ]; then
-    clear
-    figlet -f slant "S E C . . ."|lolcat
-    sleep 2
-    git clone https://github.com/thehackingsage/bughunter.git
-    cd bughunter || exit
-    chmod +x bughunter.py
-    python2 bughunter.py
+    elif [ "$pilih" = "3" ]; then
+        clear
+        figlet -f slant "S E C . . ."|lolcat
+        sleep 2
+        git clone https://github.com/TheMagizz/DarkPremium
+        cd DarkPremium || exit
+        chmod +x *
+        python2 DarkFB.py
 
-elif [ "$pilih" = "5" ]; then
-    clear
-    figlet -f slant "S E C . . ."|lolcat
-    sleep 2
-    git clone https://github.com/4L13199/LITESCRIPT
-    cd LITESCRIPT || exit
-    chmod +x *
-    python2 LITESCRIPT.py
+    elif [ "$pilih" = "4" ]; then
+        clear
+        figlet -f slant "S E C . . ."|lolcat
+        sleep 2
+        git clone https://github.com/thehackingsage/bughunter.git
+        cd bughunter || exit
+        chmod +x bughunter.py
+        python2 bughunter.py
 
-elif [ "$pilih" = "6" ]; then
-    clear
-    figlet -f slant "S E C . . ."|lolcat
-    sleep 2
-    git clone https://github.com/4L13199/meTAInstall
-    cd meTAInstall || exit
-    chmod +x *
+    elif [ "$pilih" = "5" ]; then
+        clear
+        figlet -f slant "S E C . . ."|lolcat
+        sleep 2
+        git clone https://github.com/4L13199/LITESCRIPT
+        cd LITESCRIPT || exit
+        chmod +x *
+        python2 LITESCRIPT.py
 
-elif [ "$pilih" = "7" ]; then
-    clear
-    figlet -f slant "S E C . . ."|lolcat
-    sleep 2
-    git clone https://github.com/ikiganteng/bot-igeh.git
-    cd bot-igeh || exit
-    unzip node_modules.zip
-    node index.js
+    elif [ "$pilih" = "6" ]; then
+        clear
+        figlet -f slant "S E C . . ."|lolcat
+        sleep 2
+        git clone https://github.com/4L13199/meTAInstall
+        cd meTAInstall || exit
+        chmod +x *
 
-elif [ "$pilih" = "8" ]; then
-    clear
-    figlet -f slant "S E C . . ."|lolcat
-    sleep 2
-    git clone https://github.com/wayangcode/instake
-    cd instake || exit
-    bash index.bash
+    elif [ "$pilih" = "7" ]; then
+        clear
+        figlet -f slant "S E C . . ."|lolcat
+        sleep 2
+        git clone https://github.com/ikiganteng/bot-igeh.git
+        cd bot-igeh || exit
+        unzip node_modules.zip
+        node index.js
 
-elif [ "$pilih" = "I" ] || [ "$pilih" = "i" ]; then
-    clear
-    figlet -f slant "S E C . . ."|lolcat
-    sleep 2
-    pkg update && pkg upgrade -y
-    # Tambahan: unzip, nodejs, dan python2 diperlukan oleh script di atas
-    pkg install termux-tools git curl wget nano vim mc ruby php zsh nmap openssh unzip nodejs python2 -y
-    pkg install python -y
-    pkg install cowsay toilet figlet fastfetch -y
-    gem install lolcat
-    pip install mechanize requests colorama scapy
-    figlet -f slant " D O N E "|lolcat
+    elif [ "$pilih" = "8" ]; then
+        clear
+        figlet -f slant "S E C . . ."|lolcat
+        sleep 2
+        git clone https://github.com/wayangcode/instake
+        cd instake || exit
+        bash index.bash
 
-elif [ "$pilih" = "E" ] || [ "$pilih" = "e" ]; then
-    clear
-    figlet -f slant "E X I T"|lolcat
-    sleep 3
-    echo -e $me"Ada pertanyaan ? Just Direct Message I.G ngurahjordi"
-    sleep 4
-    figlet -f slant "MAKASI"|lolcat
-    sleep 2
+    elif [ "$pilih" = "I" ] || [ "$pilih" = "i" ]; then
+        clear
+        figlet -f slant "S E C . . ."|lolcat
+        sleep 2
+        pkg update && pkg upgrade -y
+        pkg install termux-tools git curl wget nano vim mc ruby php zsh nmap openssh unzip nodejs python2 -y
+        pkg install python -y
+        pkg install cowsay toilet figlet fastfetch -y
+        gem install lolcat
+        pip install mechanize requests colorama scapy
+        figlet -f slant " D O N E "|lolcat
+        
+        # Penambahan fitur kembali ke menu
+        echo -e "\n$i[+] Instalasi Bahan Selesai!"
+        read -p "Tekan Enter untuk kembali ke menu utama..."
+        menu
 
-else
-    echo $me"[!] Pilihan tidak valid, silakan jalankan ulang script."
-fi
+    elif [ "$pilih" = "E" ] || [ "$pilih" = "e" ]; then
+        clear
+        figlet -f slant "E X I T"|lolcat
+        sleep 3
+        echo -e $me"Ada pertanyaan ? Just Direct Message I.G ngurahjordi"
+        sleep 4
+        figlet -f slant "MAKASI"|lolcat
+        sleep 2
+        exit 0
+
+    else
+        echo -e $me"\n[!] Pilihan tidak valid, silakan coba lagi."
+        sleep 2
+        menu
+    fi
+}
+
+# Mengeksekusi fungsi menu untuk pertama kali saat script dijalankan
+menu
