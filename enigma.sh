@@ -44,6 +44,7 @@ echo
 echo $me"┌==="$me"["$cy"Pilih"$me"]"
 echo $me"¦"
 read -p"└──> " pilih
+
 if [ "$pilih" = "1" ]; then
     clear
     figlet -f slant "S E C . . ."|lolcat
