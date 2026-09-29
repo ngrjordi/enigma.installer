@@ -137,5 +137,5 @@ elif [ "$pilih" = "E" ] || [ "$pilih" = "e" ]; then
     sleep 2
 
 else
-    echo -e $me"[!] Pilihan tidak valid, silakan jalankan ulang script."
+    echo $me"[!] Pilihan tidak valid, silakan jalankan ulang script."
 fi
