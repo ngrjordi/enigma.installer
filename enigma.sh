@@ -130,26 +130,11 @@ clear
 figlet -f slant "S E C . . ."|lolcat
 sleep 2
 pkg update && pkg upgrade -y
-pkg install termux-tools -y
-pkg install git -y
-pkg install python3 -y
-pkg install python-pip -y
-pkg install curl -y
-pkg install wget -y
-pkg install ruby -y
-pkg install gem -y
-pkg install php -y
-pkg install cowsay -y
-pkg install toilet -y
-pkg install figlet -y
-pkg install neofetch -y
-pkg install nano -y
-pkg install vim -y
-gem install lolcat -y
-pip install mechanize -y
-pip install requests -y
-pip install colorama -y
-pip install scapy -y
+pkg install termux-tools git curl wget nano vim mc ruby php zsh nmap openssh -y
+pkg install python -y
+pkg install cowsay toilet figlet fastfetch -y
+gem install lolcat
+pip install mechanize requests colorama scapy
 figlet -f slant " D O N E "|lolcat
 fi
 
