@@ -14,14 +14,14 @@ if [ -f "core.py" ]; then
     python3 core.py
 fi
 
-echo -e ""
+echo
 clear
 echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo $ku" |"$i"          ENIGMA INSTALLER           "$ku"|"
+echo $ku" |"$i"          ENIGMA"$i"    INSTALLER"$ku"            |"
 echo $ku" |"$me"─────────────────────────────────────────"$ku"|"
-echo $ku" |"$me" PENULIS"$cy"   ~>"$pu" NGURAH JORDI                "$ku"|"
-echo $ku" |"$me" INSTAGRAM"$cy" ~>"$pu" ngurahjordi                 "$ku"|"
-echo $ku" |"$i"                                 ENJOY "$ku"|"
+echo $ku" |"$me" PENULIS"$cy"   ~>"$pu" NGURAH JORDI"$ku"               |"
+echo $ku" |"$me" INSTAGRAM"$cy" ~>"$pu" ngurahjordi"$ku"                |"
+echo $ku" |"$i"                                  ENJOY"$ku"  |"
 echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
 echo
 echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
@@ -30,21 +30,20 @@ echo $ku" |"$cy" 2"$me"."$cy"LOCATOR"$ku"                               |"
 echo $ku" |"$cy" 3"$me"."$cy"DARK-FB"$me"       {"$cy"Premium"$me"}"$ku"               |"
 echo $ku" |"$cy" 4"$me"."$cy"BUG HUNTER"$ku"                            |"
 echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo $ku" |"$cy" 5"$me"."$cy"LITESCRIPT"$me"    {"$cy"Deface"$me"}"$ku"                |"
+echo $ku" |"$cy" 5"$me"."$cy"LITESCRIPT"$me"    {"$cy"Daface"$me"}"$ku"                |"
 echo $ku" |"$cy" 6"$me"."$cy"METASPLOIT"$ku"                            |"
 echo $ku" |"$cy" 7"$me"."$cy"FOLLOWER INSTAGRAM"$ku"                    |"
 echo $ku" |"$cy" 8"$me"."$cy"SAVE FOTO & VIDEO INSTAGRAM"$ku"           |"
 echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
 echo
 echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
-echo $ku" |"$cy" I"$me"."$me"NSTALL BAHAN"$me" {"$cy"Full"$me"}"$ku"                    |"
+echo $ku" |"$cy" I"$me"."$me"NSTALL BAHAN"$me" {"$cy"Full"$me"}"$ku"                   |"
 echo $ku" |"$cy" E"$me"."$me"XIT"$ku"                                   |"
 echo $ku"["$me"•"$ku"]"$ku"───────────────────────────────────────"$ku"["$me"•"$ku"]"
 echo
 echo $me"┌==="$me"["$cy"Pilih"$me"]"
 echo $me"¦"
-read -p "└──> " pilih
-
+read -p"└──> " pilih
 if [ "$pilih" = "1" ]; then
     clear
     figlet -f slant "S E C . . ."|lolcat
